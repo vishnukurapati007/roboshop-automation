@@ -21,7 +21,7 @@ else
 echo "mysql is sucessfully installed"
 fi
 
-dnf intall git -y
+dnf install git -y
 if [ $? -ne 0 ]
 then
     echo "error :: git installing failed"
