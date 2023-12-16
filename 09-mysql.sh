@@ -21,3 +21,13 @@ else
 echo "mysql is sucessfully installed"
 fi
 
+dnf intall git -y
+if [ $? -ne 0 ]
+then
+    echo "error :: git installing failed"
+exit 1
+else
+    echo "git installed sucessfully"
+fi
+
+
