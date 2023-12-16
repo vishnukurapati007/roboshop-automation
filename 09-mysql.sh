@@ -20,3 +20,5 @@ echo "ERROR : mysql intalling failed"
 exit 1
 else
 echo "mysql is sucessfully installed"
+fi
+
