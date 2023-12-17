@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ID=$(id -u)
-echo "script name: $0"
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -22,10 +23,10 @@ VALIDATE(){
     echo "You are root user"
     fi # fi means reverse of if, indicating condition end
 
-dnf install mysql -y
+dnf install mysql -y &>>LOGFILE
 
 VALIDATE $? "mysql"
 
-dnf install git -y
+dnf install git -y &>>LOGFILE
 
 VALIDATE $? "git"
