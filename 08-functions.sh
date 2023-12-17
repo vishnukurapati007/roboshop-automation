@@ -8,13 +8,8 @@ VALIDATE(){
         echo "error installing $1 is failed"
         exit 1
     else
-        echo "$1 installation sucess"
-    if [ $2 -ne 0 ]
-    then
-        echo "error installing $2 is failed"
-        exit 1
-    else
-        echo "$2 installation sucess"
+        echo "$1 installation success"
+
     fi
 }
 
