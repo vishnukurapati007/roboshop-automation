@@ -23,8 +23,8 @@ VALIDATE(){
 
 dnf install mysql -y
 
-VALIDATE $? "installing mysql"
+VALIDATE $? "mysql"
 
 dnf install git -y
 
-VALIDATE $? "installing git"
+VALIDATE $? "git"
