@@ -3,7 +3,7 @@
 ID=$(id -u)
 
 VALIDATE()
-    if [ $1 -ne 0 ] 
+    if { [ $1 -ne 0 ] 
     then
         echo "error installing $1 is failed"
         exit 1
@@ -16,7 +16,7 @@ VALIDATE()
     else
         echo "$2 installation sucess"
     fi
-
+    }
 
     if [ $ID -ne 0 ]
     then
