@@ -10,7 +10,7 @@ N="\e[0m"
 if [ ! -f $FILE ]
     then 
         echo -e "$R source file: $FILE does not exists. $N"
-    fi
+fi
 
 while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do
