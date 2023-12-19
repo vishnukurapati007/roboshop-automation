@@ -20,5 +20,5 @@ do
     echo "group id: $group_id"
     echo "user full name: $user_fullname"
     echo "home dir: $home_dir"
-    echo " shell path: $shell_path
+    echo " shell path: $shell_path"
 done < $FILE
